@@ -251,6 +251,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
 }
+#hero img{
+ height: 300px;
+ width: 300px;
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -292,6 +296,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .img-fluid {
+  border: 2px rgb(42, 212, 241);
+  box-shadow: 2px 2px 5px rgb(31, 191, 202);
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -455,7 +463,26 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  width: 200px;
+  max-width: 200px;
+  height: 200px;
+  /* aspect-ratio: 1.11/1; */
+  border: 1px rgb(238, 241, 35);
+  box-shadow: 2px 2px 5px rgb(238, 241, 35);
+  transition: 0.3s ease-in-out;
+  background-color: rgb(223, 223, 230);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+ 
+}
+.portfolio .portfolio-item .img-fluid  {
+
+  height: 200px;
+  
+  width: 200px;
 }
 .portfolio #portfolio-flters {
   padding: 0;
@@ -483,18 +510,21 @@ section {
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
+  
 }
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  
 }
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
+  
   right: 0;
   top: 0;
   bottom: 0;
@@ -507,6 +537,8 @@ section {
   left: 0;
   right: 0;
   bottom: -60px;
+  
+  
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
@@ -520,12 +552,15 @@ section {
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
   width: 50%;
+  
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 0.95);
+  
 }
 .portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #37b3ed;
+  
 }
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
@@ -533,10 +568,12 @@ section {
   right: 0;
   bottom: 0;
   opacity: 1;
+  
 }
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+  
 }
 
 /*--------------------------------------------------------------
@@ -544,13 +581,16 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
@@ -558,13 +598,16 @@ section {
   background-color: #fff;
   opacity: 1;
   border: 1px solid #149ddd;
+  
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #149ddd;
+  
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -572,11 +615,13 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
+  
 }
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
+  
 }
 .portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
@@ -591,6 +636,7 @@ section {
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
+  
 }
 
 /*--------------------------------------------------------------
@@ -639,7 +685,10 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+
+
 /* Certifiaction */
+
 .cert-card {
   width: 200px;
   max-width: 200px;
@@ -655,6 +704,8 @@ section {
 }
 .cert-card:hover{
   transform: scale(5);
+  height: 300px;
+  width: 330px;
   box-shadow: 10px 10px 10px rgb(178, 197, 93);
 }
 /*--------------------------------------------------------------
@@ -720,19 +771,24 @@ section {
   bottom: -20px;
   left: calc(50% - 20px);
 }
-.testimonials .swiper-pagination {
+.testimonials .swiper-wrapper {
   margin-top: 20px;
   position: relative;
 }
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+.testimonials .swiper-pagination .swiper-slide {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #149ddd;
 }
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+.testimonials .swiper-pagination .swiper-slide .testimonial-item {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #149ddd;
+
 }
 
 /*--------------------------------------------------------------
