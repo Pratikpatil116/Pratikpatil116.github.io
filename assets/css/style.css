@@ -639,7 +639,24 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
-
+/* Certifiaction */
+.cert-card {
+  width: 200px;
+  max-width: 200px;
+  /* aspect-ratio: 1.11/1; */
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px black;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(223, 223, 230);
+}
+.cert-card > img {
+  width: 330px;
+  height: 300px;
+}
+.cert-card:hover{
+  transform: scale(5);
+  box-shadow: 10px 10px 10px rgb(178, 197, 93);
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
