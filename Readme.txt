@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+My personal portfolio is a compilation of relevant work samples and documents gathered during my school years and presented in a structured manner. It profiles my goals, progress, achievements and competencies in an organised, accessible and purposeful format "
